@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="description" content="This site is an about the band TLDR.">
+        <!-- <meta http-equiv=""keywords" content="website, aboutme"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TLDR</title>
+        <link rel="stylesheet" href="TLDRStyle.css">
+
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Londrina+Sketch&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        </style>
+
+        <link rel="icon" type="image/x-icon" href="./assets/TLDRSmallIcon.jpg">
+
+    </head>
+    <body>
+        <audio autoplay>
+            <source src="./assets/introPage.wav" type="audio/mpeg">
+        </audio>
+
+        <nav>
+            <a href="./index.html"><img src="./assets/TLDRLogo.jpg" style="height:40px;"></a>
+            <a id="firstNav" href="./tour.html">Shows</a>
+            <a href="./merch.html">Merch</a>
+            <a href="./socials.html">Socials</a>
+        </nav>
+        
+        <div class="mainHeader" style="margin-top: 17vh;">
+            <div>
+                <img class="bandPic" id="guitarPic" style="margin-right:2vw" src="./assets/singerAndGuitar1.jpg" alt="guitar player"> 
+            </div>
+            <!-- center image -->
+            <div style="margin-top: -5vh;">
+                <h1 id="bandLogo">TLDR</h1>
+                <div class="description">
+                    <h2>'Heartbreak Anniversary'</h2>
+                    <h2>out 5 Oct, 2025</h2>
+
+                    <br>
+
+                    <ul>
+                        <li style="margin-bottom: -.03vh;">1. White Ticks & Black Hearts</li>
+                        <li style="margin-bottom: -.03vh;">2. Broken Record</li>
+                        <li style="margin-bottom: -.03vh;">3. Sing Myself Awake</li>
+                        <li style="margin-bottom: -.03vh;">4. Heartbreak City</li>
+                        <li style="margin-bottom: -.03vh;">5. Apartment Haunting</li>
+                        <li style="margin-bottom: -.03vh;">6. better off</li>
+                        <li style="margin-bottom: -.03vh;">7. Anniversary of Nothing</li>
+                    </ul>
+                    
+                </div>
+                <!-- <img src="./assets/heartBg.jpg"> -->
+            </div>
+            <div>
+                <!-- <img class="bandPic" style="margin-left:2vw" src="./assets/piano1.jpg"> -->
+                <img class="bandPic" id="pianoPic" src="./assets/piano1.jpg" alt="piano player"> 
+            </div>
+    
+        </div>
+
+        <div class="socialBox">
+            <img class="socialIcons" src="./assets/spotifyIcon.jpg">
+            <img class="socialIcons" src="./assets/fbIcon.jpg">
+            <img class="socialIcons" src="./assets/igIcon.jpg">
+        </div>
+
+        <!-- <div class="newsReel">
+            <h2 style="text-decoration: underline; margin-left: 40px;">News</h2>
+            <div class="reelItem">
+                <div class="reelPicsContainer">
+                    <img class="reelPics" style=" object-position: 50% 50%;" src="assets/fanMeetup.jpeg" >
+                </div>
+                <p>Oct 6 Fan Meetup</p>
+            </div>
+            <div>
+                <img>
+                <p>New merch available</p>
+            </div>
+            <div>
+                <img>
+                <p><i>In my feels</i>out now</p>
+            </div>
+        </div> -->
+
+        <script>
+            
+            const pianoImgs = ["./assets/piano1.jpg", "./assets/piano2.jpg"];
+            const guitarImgs = ["./assets/singerAndGuitar1.jpg", "./assets/singerAndGuitar2.jpg"];
+            
+            const pianoElem = document.getElementById("pianoPic");
+            const guitarElem = document.getElementById("guitarPic");
+
+            let index = 0;
+
+            function changePictures(){
+                index = 1 - index;
+                pianoElem.src = pianoImgs[index]
+                guitarElem.src = guitarImgs[index]
+            }
+
+            setInterval(changePictures, 1000);
+
+        </script>
+    </body>
+</html>

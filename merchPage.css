@@ -1,0 +1,150 @@
+@media only screen and (max-width: 600px) {
+
+  #firstNav {
+    margin-left:5% !important;
+  }
+
+  nav a {
+    font-size: 16px !important;
+  }
+
+  h1{
+    font-size: 12vw !important;
+    margin-top: 16vh !important;
+  }
+
+  /* h2{
+      font-size: 1.4em !important;
+  } */
+
+  .merch {
+    margin:auto;
+    display: grid;
+    grid-template-columns: 1fr !important;
+    margin-bottom: 15vh !important;
+  }
+
+  .merchPic{
+    width:80vw !important;
+  }
+
+
+}
+
+  #firstNav {
+    margin-left:20%;
+  }
+
+h1 {
+    font-family: 'Londrina Sketch', sans-serif;
+    font-size: 17vw;
+    text-align: center;
+    /* margin-bottom:8vh; */
+}
+
+h2 {
+    font-family: Lacquer, sans-serif;
+}
+
+p {
+    font-family: Open sans, sans-serif;
+}
+
+nav {
+    z-index: 1;
+    position:fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    /* align-content: center;
+    align-items: space-around; */
+    background-color: black;
+    color: white;
+    height: 65px;
+    align-items:center;
+    align-content: center;
+}
+
+nav a {
+    font-family: Lacquer, sans-serif;
+    color:white;
+    text-decoration: none;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+nav a:hover {
+    /* font-size: 23px; */
+    transform: scale(1.2);
+}
+
+
+body {
+    /* background-image: url('./assets/backgroundHearts.png');
+    background-size: cover; */
+}
+
+.merch {
+  margin:auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.merchPic{
+  width:24vw;
+}
+
+.merchPic:hover{
+  opacity: 0;
+}
+
+.eachMerch{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5vh;
+}
+
+button {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+}
+
+span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+button:hover {
+  color: #fff;
+}
+
+button:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}

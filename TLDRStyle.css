@@ -1,0 +1,174 @@
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 30vw !important;
+        margin-top:5vh !important;
+    }
+
+    h2{
+        font-size: 4vw;
+    }
+
+
+    #firstNav {
+    margin-left:5% !important;
+    }
+
+    nav a {
+    font-size: 16px !important;
+    }
+
+    /* h1{
+    font-size: 12vw !important;
+    margin-top: 16vh !important;
+    } */
+
+    /* make each item full width */
+    .mainHeader {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .mainHeader > div {
+        flex: 1 1 100%;
+    }
+
+    .mainHeader > div:nth-child(1) { /* guitar */
+        order: 2; 
+        margin-left: 8vw;
+    }
+
+    .mainHeader > div:nth-child(2) {
+        order: 1;
+        margin-bottom: 5vh;
+    } /* text */
+
+    .mainHeader > div:nth-child(3) { /* piano */
+        order: 3; 
+        margin-top: -30vh;
+        margin-left: 38vw;
+    } 
+
+}
+
+h1 {
+    font-family: 'Londrina Sketch', sans-serif;
+    font-size: 17vw;
+    text-align: center;
+}
+
+h2 {
+    font-family: Lacquer, sans-serif;
+    text-align: center;
+}
+
+p {
+    font-family: Open sans, sans-serif;
+}
+
+nav {
+    z-index: 1;
+    position:fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    /* align-content: center;
+    align-items: space-around; */
+    background-color: black;
+    color: white;
+    height: 65px;
+    align-items:center;
+    align-content: center;
+}
+
+nav a {
+    font-family: Lacquer, sans-serif;
+    color:white;
+    text-decoration: none;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+nav a:hover {
+    /* font-size: 23px; */
+    transform: scale(1.2);
+}
+
+
+#bandLogo {
+    margin:auto;
+}
+
+.mainHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top:10vh;
+    margin-bottom:6.5vh;
+}
+
+#guitarist {
+    margin-top:-40vh;
+    margin-left: 7vw;
+}
+
+.bandPic {
+    width: 30vw;
+}
+
+.description {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: url('./assets/heartBg.png');
+    background-size: 100%; */
+}
+
+.newsReel {
+    background-color: black;
+    color: white;
+    /* overflow-x:scroll; */
+    display:flex;
+    flex-direction:row;
+    height: 50vh;
+}
+
+.reelItem {
+    display:flex;
+    flex-direction: ;
+}
+
+.reelPics {
+    height: 25vh;
+    width: 35vh;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.socialBox{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    bottom: 20px;
+    right: 20px;
+}
+
+.socialIcons{
+    width:25px;
+    height:25px;
+    margin-left: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: Lacquer, sans-serif;
+}
+
+#firstNav {
+  margin-left:20%
+}

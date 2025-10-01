@@ -1,0 +1,162 @@
+@media only screen and (max-width: 600px) {
+
+    h2{
+    font-size: 10vw;
+    }
+
+    #firstNav {
+    margin-left:5% !important;
+    }
+
+    nav a {
+    font-size: 16px !important;
+    }
+
+    h1{
+    font-size: 12vw !important;
+    margin-top: 16vh !important;
+    }
+
+    table {
+        width: 100% !important;
+        border-spacing: 0 0px !important;
+        table-layout: auto !important;
+    }
+
+    thead {
+        font-size:1.4em !important;
+        height: 6vh !important;
+    }
+
+    button {
+        width: 100px !important;
+        margin-left: 0vw !important;
+        margin:0% !important;
+    }
+
+    td {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+}
+
+h1 {
+    font-family: 'Londrina Sketch', sans-serif;
+    font-size: 17vw;
+    text-align: center;
+}
+
+h2 {
+    font-family: Lacquer, sans-serif;
+}
+
+p {
+    font-family: Open sans, sans-serif;
+}
+
+nav {
+    z-index: 1;
+    position:fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    height: 65px;
+    align-items:center;
+    align-content: center;
+}
+
+nav a {
+    font-family: Lacquer, sans-serif;
+    color:white;
+    text-decoration: none;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+nav a:hover {
+    /* font-size: 23px; */
+    transform: scale(1.2);
+}
+
+table {
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+    /* 20 horizontal */
+    width: 45vw;
+}
+
+thead {
+    font-family: Lacquer, sans-serif;
+    font-size:25px;
+    background-color: black;
+    color:white;
+    height: 6vh;
+}
+
+tbody {
+    font-family: Open sans, sans-serif;
+}
+
+/* tr {
+    padding-bottom: 50px;
+} */
+
+td {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+button {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 3vw;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+}
+
+span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+button:hover {
+  color: #fff;
+}
+
+button:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+#firstNav {
+  margin-left:20%
+}
